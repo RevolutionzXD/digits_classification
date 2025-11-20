@@ -1,0 +1,26 @@
+# --- DỮ LIỆU (DATASET) ---
+# Chặn folder data chứa MNIST nặng nề
+data/
+src/data/data/
+
+# --- MÔ HÌNH (TRAINED MODELS) ---
+# Chặn các file mô hình đã train xong (thường rất nặng)
+*.pth
+assets/*.pth
+
+# --- PYTHON (FILE RÁC HỆ THỐNG) ---
+# Chặn các file cache do Python tự sinh ra
+__pycache__/
+*.pyc
+
+# --- MÔI TRƯỜNG ẢO (ENVIRONMENT) ---
+# Chặn các thư mục chứa thư viện đã cài
+micromamba/
+env/
+venv/
+.venv/
+
+# --- CẤU HÌNH IDE (VS CODE) ---
+# Chặn các file cấu hình riêng của máy ông
+.vscode/
+.idea/
