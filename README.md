@@ -36,20 +36,27 @@ digits_classification/
 Dự án yêu cầu Python 3.10 trở lên. Khuyến khích sử dụng Micromamba hoặc Conda để quản lý môi trường.
 
 ### 1. Clone dự án
+```
 git clone <https://github.com/RevolutionzXD/digits_classification>
 cd digits_classification
+```
 
 ### 2. Tạo môi trường ảo
+```
 micromamba create -n digits_classification python=3.10 -y
 micromamba activate digits_classification
+```
 
 ### 3. Cài đặt thư viện
+```
 pip install -r requirements.txt
+```
 
 ## Cấu hình (Configuration)
 
 Bạn có thể thay đổi các tham số trong file configs/config.yaml:
 
+```
 train:
   epoch: 10             # Số vòng lặp huấn luyện
   batch_size: 64        # Kích thước lô dữ liệu
@@ -62,12 +69,15 @@ model:
   input_dim: 784        # Đầu vào (28x28 pixel)
   hidden_dim: 128       # Số nơ-ron lớp ẩn
   output_dim: 10        # Đầu ra (10 chữ số)
+```
 
 ## Hướng dẫn Huấn luyện
 
 Để bắt đầu huấn luyện mô hình, hãy chạy lệnh sau tại thư mục gốc:
 
+```
 python3 trainer.py
+```
 
 Quá trình thực hiện:
 1. Tự động tải dữ liệu MNIST về thư mục data/ (nếu chưa có).
