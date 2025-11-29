@@ -21,6 +21,6 @@ venv/
 .venv/
 
 # --- CẤU HÌNH IDE (VS CODE) ---
-# Chặn các file cấu hình riêng của máy ông
+# Chặn các file cấu hình riêng của máy
 .vscode/
 .idea/
