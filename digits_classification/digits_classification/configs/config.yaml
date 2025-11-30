@@ -10,3 +10,10 @@ model:
   input_dim: 784
   hidden_dim: 128
   output_dim: 10
+
+model_cnn:
+  output_dim: 10       
+  conv1_out: 32         
+  conv2_out: 64         
+  fc1_hidden: 128       
+  dropout_rate: 0.3
