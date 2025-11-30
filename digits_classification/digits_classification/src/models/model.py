@@ -22,3 +22,26 @@ class SimpleMLP(nn.Module):
         x = self.fc2(x)
         
         return x
+    
+class CNN(nn.Module):
+    def __init__(self, output_dim=10):
+        super(CNN, self).__init__()
+        self.first_convert = nn.Conv2d(1, 32, 3, padding = 1)
+        self.first_batch = nn.BatchNorm2d(32)
+
+        self.second_convert = nn.Conv2d(32, 64, 3, padding = 1)
+        self.second_batch = nn.BatchNorm2d(64)
+
+        self.pool = nn.MaxPool2d(2, 2)
+        self.dropout = nn.Dropout(0.3)
+
+        self.first_fully_connect = nn.Linear(64 * 7 * 7, 128)
+        self.second_fully_connect = nn.Linear(128, output_dim)
+
+    def forward(self, x):
+        x = self.pool(torch.relu(self.first_batch(self.first_convert(x))))
+        x = self.pool(torch.relu(self.second_batch(self.second_convert(x))))
+
+        x = x.view(x.size(0), -1)
+        x = self.dropout(torch.relu(self.first_fully_connect(x)))
+        return self.second_fully_connect(x)
