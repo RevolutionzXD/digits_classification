@@ -1,7 +1,17 @@
+# Core AI
 torch==2.3.0
-torchvision==0.18.0   
+torchvision==0.18.0
 numpy==1.26.4
+
+# Tiện ích & Cấu hình
 tqdm==4.66.2
 omegaconf==2.3.0
+
+# Xử lý ảnh & Vẽ hình (Cho demo.py)
 matplotlib==3.8.4
 pillow==10.3.0
+
+# Giao diện Web App (Cho app.py)
+streamlit==1.32.0
+streamlit-drawable-canvas==0.9.3
+pandas==2.2.1
