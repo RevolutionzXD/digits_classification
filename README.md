@@ -1,4 +1,4 @@
-Markdown# DIGITS_CLASSIFICATION
+# DIGITS_CLASSIFICATION
 ![Biểu đồ Grantt của nhóm](./digits_classification/digits_classification/assets/gian_do_grantt.png)
 
 # Digits Classification - Phân loại chữ số viết tay (MNIST)
