@@ -123,8 +123,8 @@ Markdown# DIGITS_CLASSIFICATION
 
 Dự án xây dựng mô hình trí tuệ nhân tạo (AI) để nhận diện và phân loại chữ số viết tay từ bộ dữ liệu MNIST. Dự án được thực hiện bằng **Python** và **PyTorch**, hỗ trợ cả giao diện dòng lệnh (CLI) và giao diện Web trực quan.
 
-![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?logo=pytorch)
-![Streamlit](https://img.shields.io/badge/Demo-Streamlit-green?logo=streamlit)
+[![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?logo=pytorch)](https://pytorch.org/)
+[![Streamlit](https://img.shields.io/badge/Demo-Streamlit-green?logo=streamlit)](https://streamlit.io/)
 
 ## Tính năng chính
 * **Đa mô hình:**
@@ -191,19 +191,23 @@ Dự án cung cấp 2 script riêng biệt cho từng loại mô hình:
 python3 trainer.py
 ```
 Output: assets/model_final.pth
+
 2. Huấn luyện CNN (Nâng cao - Khuyên dùng)
 ```
 python3 trainer_cnn.py
 ```
 Output: assets/model_cnn_final.pth
+
 Lưu ý: Quá trình sẽ tự động tải dữ liệu về thư mục data/ và chia tập Train/Val/Test.
 ## Hướng dẫn chạy Demo
 Sau khi có file model, bạn có 2 cách để kiểm thử:
+
 Cách 1: Chạy Web App (Giao diện)Vẽ số trực tiếp lên màn hình và xem AI dự đoán theo thời gian thực.
 ```
 streamlit run app.py
 ```
 Sau khi chạy, giữ phím Ctrl và click vào link http://localhost:8501 hiện ra trong terminal.
+
 Cách 2: Chạy CLI Demo (Terminal)Menu cổ điển, test với ảnh trong folder inputs hoặc ảnh MNIST ngẫu nhiên.Bashpython3 demo.py
 
 
