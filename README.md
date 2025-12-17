@@ -21,6 +21,7 @@ Dự án xây dựng mô hình trí tuệ nhân tạo (AI) để nhận diện v
 ```text
 digits_classification/
 ├── assets/               # Chứa file model đã huấn luyện (.pth)
+├── inputs/               # Thư mục chứa ảnh đầu vào để test (ảnh tự vẽ, tải về)
 ├── configs/
 │   └── config.yaml       # File cấu hình tham số
 ├── data/                 # Thư mục chứa dữ liệu MNIST (Tự động tải)
@@ -101,8 +102,11 @@ streamlit run app.py
 ```
 Sau khi chạy, giữ phím Ctrl và click vào link http://localhost:8501 hiện ra trong terminal.
 
-Cách 2: Chạy CLI Demo (Terminal)Menu cổ điển, test với ảnh trong folder inputs hoặc ảnh MNIST ngẫu nhiên.Bashpython3 demo.py
+Cách 2: Chạy CLI Demo (Terminal)Menu cổ điển, test với ảnh trong folder inputs hoặc ảnh MNIST ngẫu nhiên.
 
+```
+python3 demo.py
+```
 
 ## Kết quả Demo
 
