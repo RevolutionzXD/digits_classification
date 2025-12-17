@@ -69,7 +69,7 @@ def load_model(device, model_type):
     if not os.path.exists(path):
         print(f"\n❌ LỖI: Không tìm thấy file trọng số '{path}'")
         print(f"👉 Bạn chọn model {model_type.upper()} nhưng file .pth không có ở đó.")
-        print("👉 Kiểm tra lại xem thằng bạn ông lưu file tên gì?")
+        print("👉 Kiểm tra lại xem bạn lưu file tên gì?")
         return None
 
     try:

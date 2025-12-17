@@ -109,6 +109,7 @@ Cách 2: Chạy CLI Demo (Terminal)Menu cổ điển, test với ảnh trong fol
 SimpleMLP	
 * Accuracy(Validation): ~97.13%
 * Đặc điểm: Nhanh, nhẹ, cấu trúc đơn giản.
+
 SimpleCNN		
 * Accuracy(Validation): ~99.20%
 * Đặc điểm: Chính xác cao hơn, nhận diện tốt các biến thể hình ảnh.
