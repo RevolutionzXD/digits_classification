@@ -24,8 +24,16 @@ digits_classification/
 │   │   └── dataloader.py # Xử lý tải dữ liệu và tạo DataLoader
 │   ├── losses/
 │   │   └── loss.py       # Định nghĩa hàm mất mát (CrossEntropyLoss)
-│   └── models/
-│       └── model.py      # Kiến trúc mạng nơ-ron (SimpleMLP)
+│   ├── models/
+│   │   └── model.py      # Kiến trúc mạng nơ-ron (SimpleMLP)
+│   ├── ui/
+│   │   ├── DrawAndGuess.py     # Thiết kế menu để người dùng vẽ và AI đoán
+│   │   ├── MainScreenController.py      # Nơi quản lý các thao tác của người dùng
+│   │   ├── MainUserScreen.py      # Màn hình chính của người dùng
+│   │   └── TestMNISTUI.py      # Thiết kế màn hình chạy trên tập dữ liệu MNIST
+│   ├── utils
+│   │   └── image_utils.py # Nơi chứa các hàm phụ trợ
+│   └── infer.py # Cầu nối giữa Model và UI
 ├── trainer.py            # File script chính để huấn luyện
 ├── requirements.txt      # Danh sách các thư viện cần cài đặt
 └── README.md             # Tài liệu hướng dẫn
@@ -50,6 +58,7 @@ micromamba activate digits_classification
 ### 3. Cài đặt thư viện
 ```
 pip install -r requirements.txt
+micromamba install tk
 ```
 
 ## Cấu hình (Configuration)
