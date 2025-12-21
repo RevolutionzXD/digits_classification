@@ -15,28 +15,28 @@ Dự án xây dựng mô hình trí tuệ nhân tạo (AI) đơn giản để nh
 
 ```
 digits_classification/
-├── assets/               # Chứa file model đã huấn luyện (model_final.pth)
+├── assets/                               # Chứa file model đã huấn luyện (model_final.pth)
 ├── configs/
-│   └── config.yaml       # File cấu hình tham số (Epoch, Batch size...)
-├── data/                 # Thư mục chứa dữ liệu MNIST (được Git bỏ qua)
+│   └── config.yaml                       # File cấu hình tham số (Epoch, Batch size...)
+├── data/                                 # Thư mục chứa dữ liệu MNIST (được Git bỏ qua)
 ├── src/
 │   ├── data/
-│   │   └── dataloader.py # Xử lý tải dữ liệu và tạo DataLoader
+│   │   └── dataloader.py                 # Xử lý tải dữ liệu và tạo DataLoader
 │   ├── losses/
-│   │   └── loss.py       # Định nghĩa hàm mất mát (CrossEntropyLoss)
+│   │   └── loss.py                       # Định nghĩa hàm mất mát (CrossEntropyLoss)
 │   ├── models/
-│   │   └── model.py      # Kiến trúc mạng nơ-ron (SimpleMLP)
+│   │   └── model.py                      # Kiến trúc mạng nơ-ron (SimpleMLP)
 │   ├── ui/
-│   │   ├── DrawAndGuess.py     # Thiết kế menu để người dùng vẽ và AI đoán
-│   │   ├── MainScreenController.py      # Nơi quản lý các thao tác của người dùng
-│   │   ├── MainUserScreen.py      # Màn hình chính của người dùng
-│   │   └── TestMNISTUI.py      # Thiết kế màn hình chạy trên tập dữ liệu MNIST
+│   │   ├── DrawAndGuess.py               # Thiết kế menu để người dùng vẽ và AI đoán
+│   │   ├── MainScreenController.py       # Nơi quản lý các thao tác của người dùng
+│   │   ├── MainUserScreen.py             # Hiển thị màn hình chính của người dùng
+│   │   └── TestMNISTUI.py                # Thiết kế màn hình chạy trên tập dữ liệu MNIST
 │   ├── utils
-│   │   └── image_utils.py # Nơi chứa các hàm phụ trợ
+│   │   └── image_utils.py                # Nơi chứa các hàm phụ trợ
 │   └── infer.py # Cầu nối giữa Model và UI
-├── trainer.py            # File script chính để huấn luyện
-├── requirements.txt      # Danh sách các thư viện cần cài đặt
-└── README.md             # Tài liệu hướng dẫn
+├── trainer.py                            # File script chính để huấn luyện
+├── requirements.txt                      # Danh sách các thư viện cần cài đặt
+└── README.md                             # Tài liệu hướng dẫn
 ```
 
 ## Cài đặt và Môi trường
